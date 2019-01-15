@@ -1,0 +1,20 @@
+{
+  "name": "highloadcup",
+  "version": "1.0.0",
+  "description": "",
+  "main": "src/server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "elastic-builder": "^2.2.2",
+    "elasticsearch": "^15.2.0",
+    "fastify": "^1.13.3",
+    "node-stream-zip": "^1.7.0"
+  },
+  "devDependencies": {
+    "@types/elasticsearch": "^5.0.30"
+  }
+}

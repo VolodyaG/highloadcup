@@ -1,0 +1,65 @@
+{
+  "settings": {
+    "number_of_shards": 1
+  },
+  "mappings": {
+    "account": {
+      "properties": {
+        "id": {
+          "type": "integer"
+        },
+        "email": {
+          "type": "text",
+          "fields": {
+            "raw": {
+              "type": "keyword"
+            }
+          }
+        },
+        "fname": {
+          "type": "keyword"
+        },
+        "sname": {
+          "type": "text"
+        },
+        "phone": {
+          "type": "text"
+        },
+        "sex": {
+          "type": "keyword"
+        },
+        "birth": {
+          "type": "date"
+        },
+        "country": {
+          "type": "keyword"
+        },
+        "city": {
+          "type": "keyword"
+        },
+        "joined": {
+          "type": "date"
+        },
+        "status": {
+          "type": "keyword"
+        },
+        "interests": {
+          "type": "keyword"
+        },
+        "premium": {
+          "properties": {
+            "start": {
+              "type": "date"
+            },
+            "finish": {
+              "type": "date"
+            }
+          }
+        },
+        "likes": {
+          "type": "nested"
+        }
+      }
+    }
+  }
+}
